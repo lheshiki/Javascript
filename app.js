@@ -156,29 +156,33 @@ console.log(student_list[3]['Hobby'])
 
         //Challenger 問題
 
-let film_list= [
+let film_list= [{category:'Love comedy',movie:
                   [
                     {name:'Hitch',main_character:'Will Smith'},
                     {name:'Notebook',main_character:'Rachel McAdams'}
-                  ],
+                  ]},
+                  {category:'Suspense',movie:
                   [
                      {name:'Sixth sense',main_character:'Bruce Willis'},
                      {name:'Basic Instict',main_character:'Sharon Stone'}
-                   ],
+                   ]},
+                  {category:'Comedy',movie:
                   [
                      {name:'Men in black',main_character:'Will Smith'},
                      {name:'Superbad',main_character:'Jonah Hill'}
-                  ],
+                  ]},
+                  {category:'Horror',movie:
                   [
                    {name:'IT',main_character:'Jack Dylan'},
                    {name:'Orphan',main_character:'Isabelle Fuhrman'}
-                  ],
+                  ]},
+                  {category:'Science Fiction',movie:
                   [
                    {name:'Harry Potter',main_character:'Daniel Radcliffe'},
                    {name:'Star Wars',main_character:'Harrison Ford'}
-                  ]
+                  ]}
                 ]   
 
-console.log(film_list[1][1])
+console.log(film_list[0]['movie']['main_character'])
 
 
