@@ -185,4 +185,67 @@ let film_list= [{category:'Love comedy',movie:
 
 console.log(film_list[0]['movie']['main_character'])
 
+// If basi starts from here
+
+let weight = 222
+if (weight >= 200) {console.log('ヘビー級')}
+else if (weight >=115 && weight <= 118) {console.log('バンダム級')}
+else{console.log('その他の階級')}
+
+
+let greeting = 'Bon jour'
+switch(greeting){
+                case'Good morning':
+                      console.log('English')
+                      break;
+                case'Bon jour':
+                      console.log('French')
+                      break;
+                case'Bon dia':
+                      console.log('Portuguese')
+                      break;
+                default:console.log('Not identified')
+                }
+
+// くり返し構文
+for (var i = 2; i <= 10; i++) 
+    {
+      console.log(i)
+    }     
+
+
+let student_list2=[
+                  {name:'Seedkun',from:'Sebu',Hobby:'Surfing'},
+                  {name:'Shinya',from:'Okinawa',Hobby:'Travel'},
+                  {name:'Yoshiya',from:'Kyoto',Hobby:'Soccer'},
+                  {name:'Moe',from:'Yamagata',Hobby:'Korean drama'},      
+                  {name:'Yuko',from:'Okinawa',Hobby:'Taking photos'}  
+                  ];
+
+for (var i = 0; i < 5; i++) 
+    {
+     console.log(student_list2[i]['name'])     
+    }                  
+
+for (var i = 2; i <=20; i++) 
+    {
+      console.log(i)
+    }
+
+for (var i = 1; i<=50 ; i++) 
+    {
+    if (i%5 === 0) {console.log(i)}
+    continue
+    }
+
+console.log('乱数を使ったプログラム')
+// randomに0〜10の数値がランダムに代入される
+var random = Math.floor( Math.random() * 5 );
+console.log( random );
+
+let omikuji = ['Good luck','Normal','Better to pray','Bad luck','You are already dead']
+
+console.log(omikuji[random])
+
+
 
